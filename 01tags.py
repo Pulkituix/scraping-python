@@ -13,9 +13,9 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # print(soup.find_all("div")) # list of all divs
 
 # for link in soup.find_all("a"):
-    # print(link)
-    # print(link.get("href"))
-    # print(link.get_text())
+#     print(link)
+#     print(link.get("href"))
+#     print(link.get_text())
 
 # s=soup.find(id="link3")
 # print(s)
@@ -52,6 +52,7 @@ cont = soup.find(class_="container")
 # ulTag.append(liTag)
 
 # soup.html.body.insert(0, ulTag)
+
 # with open("modified.html", "w") as f:
 #     f.write(str(soup))
 
@@ -62,14 +63,14 @@ cont = soup.find(class_="container")
 # print(cont.has_attr("contenteditable")) # true
 
 
-def has_class_but_not_id(tag):
-    return not tag.has_attr("class") and not tag.has_attr("id")
+# def has_class_but_not_id(tag):
+#     return tag.has_attr("class") and not tag.has_attr("id")
 
-def has_content(tag):
-    return tag.has_attr("content")
+# def has_content(tag):
+#     return tag.has_attr("content")
 
-results = soup.find_all(has_class_but_not_id);
-# print(results)
+# results = soup.find_all(has_class_but_not_id);
+# # print(results)
 
-for res in results:
-    print(res, "\n\n")
+# for res in results:
+#     print(res, "\n\n")
